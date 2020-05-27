@@ -1,0 +1,124 @@
+.wrapper {
+    margin:10% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 240px;
+}
+.block {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color:grey;
+    border: 2px solid black;
+    transition: .8s;
+}
+.block:hover {
+    background-color: orange;
+    opacity: .8;
+    -moz-transform: rotate(90deg); 
+    -ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.block:nth-child(n+21) {
+    background-color: blue;
+}
+.block:nth-child(n+21):hover{
+    background-color: cyan;
+}
+
+.block:nth-child(4n-1) {
+    background-color: red;
+}
+.block:nth-child(4n-1):hover {
+    background-color: blueviolet;
+}
+.button_wrapper{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 991px;
+}
+
+.button_wrapper::before {
+    content: "";
+    height: 12px;
+    width: 200px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    margin-right: 45px;
+}
+
+.button_wrapper::after {
+    content: "";
+    height: 12px;
+    width: 200px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    margin-left: 45px;
+}
+
+button {
+    width: 501px;
+    height: 92px;
+    background: #44D3A8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: none;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    color: #fff;
+}
+
+button:hover{
+    background-color: darkorchid;
+}
+ button:active {
+    background-color: darkred;
+ }
+
+.area {
+    font-size: 24px;;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur 1.5s ease-out infinite;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 4px #fff;
+  }
+  
+  @keyframes blur {
+    from {
+      text-shadow:0px 0px 5px #fff,
+        0px 0px 5px #fff, 
+        0px 0px 10px #fff,
+        0px 0px 15px #fff,
+        0px 0px 15px #fff,
+        0px 0px 15px #fff,
+        0px 0px 15px #fff,
+        0px 0px 15px #fff,
+        0px 0px 30px #fff,
+        0px 0px 30px #fff,
+        0px 0px 30px #7B96B8,
+        0px 0px 90px #7B96B8,
+        0px 2px 60px #7B96B8,
+        0px 2px 60px #7B96B8,
+        0px 2px 60px #7B96B8,
+        0px 2px 60px #7B96B8,
+        0px -2px 60px #7B96B8,
+        0px -2px 60px #7B96B8;
+    }
+  }
