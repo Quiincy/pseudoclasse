@@ -46,7 +46,7 @@ body {
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    width: 991px;
+    width: 993px;
 }
 
 .button_wrapper::before {
@@ -93,7 +93,7 @@ button:hover{
     text-decoration: underline;
     width: 500px;
     height: 91px;
-    border: 1px solid white;
+    border: 2px solid #C4C4C4;
 }
  button:active {
     background-color: darkred;
